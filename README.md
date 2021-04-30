@@ -11,10 +11,19 @@ An Example of a CVP event is high interface utlization which is shown below.
 
 ![Alt text](media/events.jpg?raw=true "events")
 
+### Example event
+
+For every event a kafka message will be written to the broke where for example "Interface Exceeded Outbound Utilization Threshold" is they key and "Interface outOctets bandwidth utilization (98.80548%) exceeded threshold of 98%" is the value.
+
+```
 Interface Exceeded Outbound Utilization Threshold        Interface outOctets bandwidth utilization (98.80548%) exceeded threshold of 98%
+
 kafka writer: writing 1 messages to test (partition: 0)
+
 Interface Exceeded Outbound Utilization Threshold        Interface outOctets bandwidth utilization (1300.97%) exceeded threshold of 95%
+
 kafka writer: writing 1 messages to test (partition: 0)
+```
 
 ### Streaming events to your favorite pub/sub system.
 
